@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "2e994116-17b6-4c2a-9a68-d9a018acf70c",
+		"name": "test_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/test_task/public/api/create_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "website_id",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "post",
+							"value": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/test_task/public/api/create_post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test_task",
+						"public",
+						"api",
+						"create_post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/test_task/public/api/subscription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/test_task/public/api/subscription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"test_task",
+						"public",
+						"api",
+						"subscription"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
